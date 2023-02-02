@@ -1,0 +1,55 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ##  colors   */
+:root{
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: url(images/bg-intro-desktop.png);
+    background-color: hsla(0, 100%, 74%, 0.72);
+}
+.main_container{
+    display: grid;
+    max-width: 900px;
+    grid-template-columns: 1fr 1fr;
+}
+.form_box_outer{
+    display: flex;
+    flex-direction: column;
+}
+.form_box_outer .offer_ad{
+    height: 50px;
+    color: white;
+    background: var(--Blue);
+}
+.form_box_inner form input, button{
+    display: block;
+    width: 100%;
+    outline: none;
+}
+.form_box_inner form input{
+    padding: 15px;
+}
