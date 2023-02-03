@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+
+
 .attribution {
   font-size: 11px;
   text-align: center;
@@ -30,6 +35,8 @@ body{
     flex-direction: column;
     background: url(images/bg-intro-desktop.png);
     background-color: hsla(0, 100%, 74%, 0.72);
+    font-family: 'Poppins', sans-serif;
+
 }
 .main_container{
     display: grid;
@@ -39,17 +46,54 @@ body{
 .form_box_outer{
     display: flex;
     flex-direction: column;
+    gap: 20px;
 }
 .form_box_outer .offer_ad{
     height: 50px;
     color: white;
     background: var(--Blue);
+    /* margin: 15px 30px; */
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    width: 100%;
 }
 .form_box_inner form input, button{
     display: block;
     width: 100%;
     outline: none;
 }
-.form_box_inner form input{
+.form_box_inner form input, button{
     padding: 15px;
+    margin: 20px 0;
+}
+.form_box_inner{
+    background-color: white;
+    padding: 15px 30px;
+    border-radius: 8px;
+}
+.text_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    /* text-align: center; */
+    color: white;
+    padding: 20px;
+}
+.form_box_inner form button{
+    border-radius: 5px;
+    outline: none;
+    color: white;
+    background-color: var(--Green);
+    text-transform: uppercase;
+    border: none;
+}
+.termsconditions span {
+    color: var(--Red);
+}
+.termsconditions {
+    font-size: 10px;
+    text-align: center;
+    color: var(--Grayish-Blue);
 }
