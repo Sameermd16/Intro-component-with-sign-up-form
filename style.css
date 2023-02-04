@@ -127,6 +127,8 @@ body{
 }
 .form_control small{
     opacity: 0;
+    color: var(--Red);
+    align-self: right;
 }
 .form_control.form_control.error small{
     opacity: 1;
