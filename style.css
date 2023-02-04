@@ -33,6 +33,7 @@ body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 50px;
     background: url(images/bg-intro-desktop.png);
     background-color: hsla(0, 100%, 74%, 0.72);
     font-family: 'Poppins', sans-serif;
@@ -42,6 +43,7 @@ body{
     display: grid;
     max-width: 900px;
     grid-template-columns: 1fr 1fr;
+    gap: 30px;
 }
 .form_box_outer{
     display: flex;
@@ -57,6 +59,7 @@ body{
     text-align: center;
     border-radius: 8px;
     width: 100%;
+    font-size: 12px;
 }
 .form_box_inner form input, button{
     display: block;
@@ -66,6 +69,13 @@ body{
 .form_box_inner form input, button{
     padding: 15px;
     margin: 20px 0;
+}
+.form_box_inner form input:focus{
+    border: 1px solid var(--Dark-Blue);
+}
+.form_box_inner form input{
+    border-radius: 5px;
+    border: 1px solid var(--Grayish-Blue);
 }
 .form_box_inner{
     background-color: white;
@@ -83,11 +93,11 @@ body{
 }
 .form_box_inner form button{
     border-radius: 5px;
-    outline: none;
     color: white;
     background-color: var(--Green);
     text-transform: uppercase;
     border: none;
+    cursor: pointer;
 }
 .termsconditions span {
     color: var(--Red);
@@ -96,4 +106,48 @@ body{
     font-size: 10px;
     text-align: center;
     color: var(--Grayish-Blue);
+}
+.form_control.error input{
+    border-color: 2px solid var(--Red);
+}
+.form_control.error input::placeholder{
+    color: var(--Red);
+}
+.form_control{
+    position: relative;
+}
+.form_control img{
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    opacity: 0;
+}
+.form_control.error img{
+    opacity: 1;
+}
+.form_control small{
+    opacity: 0;
+}
+.form_control.form_control.error small{
+    opacity: 1;
+}
+
+
+
+
+
+
+@media only screen and (max-width: 768px){
+    .main_container{
+        grid-template-columns: 1fr;
+        max-width: 400px;
+    }
+    .text_box{
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 400px){
+    .main_container{
+        max-width: 300px;
+    }
 }

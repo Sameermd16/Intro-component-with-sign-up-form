@@ -22,11 +22,31 @@
         Try it free 7 days <span>then $20/mo. thereafter</span> 
       </div>
       <div class="form_box_inner">
-        <form action="">
-          <input type="text" placeholder="First Name">
-          <input type="text" placeholder="Last Name">
+        <form action="" class="box" id="form">
+          <div class="form_control">
+            <input type="text" placeholder="First Name" id="firstname">
+            <img src="images/icon-error.svg" alt="error_icon">
+            <small></small>
+          </div>
+          <div class="form_control">
+            <input type="text" placeholder="Last Name" id="lastname">
+            <img src="images/icon-error.svg" alt="error_icon">
+            <small></small>
+          </div>
+          <div class="form_control">
+            <input type="email" placeholder="Enter email address" id="email">
+            <img src="images/icon-error.svg" alt="error_icon">
+            <small></small>
+          </div>
+          <div class="form_control">
+            <input type="password" placeholder="Enter the password" id="password">
+            <img src="images/icon-error.svg" alt="error_icon">
+            <small></small>
+          </div>
+          
+          <!-- <input type="text" placeholder="Last Name">
           <input type="email" placeholder="Email Address">
-          <input type="password" placeholder="Password">
+          <input type="password" placeholder="Password"> -->
           <button type="submit">Claim your free trial</button>
           <div class="termsconditions">  By clicking the button, you are agreeing to our <span>Terms and Services  </span>         </div>
         </form>
@@ -53,8 +73,10 @@
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://github.com/Sameermd16" target="_blank">Sameermd</a>.
     </p>
   </footer>
+
+<script src="script.js"></script>
 </body>
 </html>
